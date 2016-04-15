@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        
+            <title>probando canvas</title>
+            <script>
+                
+                window.onload=function(){      //abrir la ventana para trabajar en Script
+                //se recibe el elemnto canvas
+                    var elemento=document.getElementById('micanvas');
+        
+                    if (elemento && elemento.getContext){
+                        //accedo al contexto 2d de este canvas, necesario para dibujar
+                        
+                        var contexto=elemento.getContext('2d');
+                        
+                        if (contexto){
+                            //si tengo el cotexto 2d es q todo ha ido bien y puedo empezar a dibujar en el canvas 
+                            //comienzo dibujando un rectangulo
+                            contexto.fillRect(0,0,550,100);
+                            //cambio el color de estilo de dibujo a rojo
+                            contexto.fillStyle='#cc0000';
+                            //dibujootro rectangulo
+                            contexto.fillRect(10,10,100,70);
+                            
+                        }
+                        
+                    }
+                } 
+        
+            </script>
+    </head>
+    
+    
+    <body>
+        
+        <canvas id="micanvas" width="200" height="100">ESTE TEXTO SE MUESTRA PARA LOS NAVEGADORES NO COMPATIBLES
+        </canvas>  <!--ETIQUETA CANVAS , etiqueta para animaciones, se programa en script-->
+    
+        <center>
+            <p>Anderson Fabian Alarcon</p>
+        </center><!--ETIQUETA CENTER centrar texto-->
+        
+        <cite draggable="true">esto es una frase celebre</cite> <!--ETIQUETA CITE encerrar cintas como frases celebres,draggable para que se pueda arrastrar-->
+        
+        <code><!--ETIQUETA CODE nos permite poner codigo en la pagina-->
+            
+                <pre><!--nos toma los saltos de linea en codigo-->
+                
+                <!--si queremos poner codigo de la misma pagina abrimos de la siguiente manera
+                &lbbody&rb asi este no generara errores -->
+                
+                
+                public class holaMundo(){
+                
+                    <!--codigo java-->
+                }
+                
+        </code>
+            
+        <caption> </caption> <!--ETIQUETA CAPTION sirve para mostrar el titulo de una tabla-->
+            
+        
+            
+            
+       
+            
+            
+    </body>
+
+
+</html>
