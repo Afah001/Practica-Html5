@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
     
@@ -9,28 +9,112 @@
     
     <body>
         
-        <table>
-        
-            <colgroup> <!--ETIQUETA COLGROUP un grupo de columnas-->
             
-                <col width="300" span="2 style="background-color:"greeen" aling="center" >  <!--ETIQUETA COL especifica aq columna quiero cambiar la apariencia , span selecciona la columna -->
-    
-               
-                <col width="300" style="background-color:"red" align="left">
-                
-                
-                
-            </colgroup>
+               <table>  <!--ETIQUETA TABLE crea una tabla-->
+             
+                          <tr>         <!--ETIQUETA TR representa  las filas -->
+                   
+                                <th>ISBN</th><!--ETIQUETA TH representa las columna con negrilla-->
+                                <th>Title</th>
+                                <th>Price</th>    
+                    
+                          </tr>
+          
+                          <tr>
+                   
+                                <td>3476896</td> <!--ETIQUETA TD representa las columnas normales-->
+                                <td>My first HTML</td>
+                                <td>$53</td>
+                    
+                          </tr>
+                 
+            
+                  
+                  
+                  
+                          <colgroup>    <!--ETIQUETA COLGROPUD tiene en cuenta un grupo de columnas  -->
+                   
+                                    <col span="2" style="background-color:red">   <!--ETIQUETA COL especifica a q columna se le quiere realizar cambios de apariencia, con el ATRIBUTO span,toma el numero de la columna -->
+                                  
+                                    <col style="background-color:yellow">
+                    
+                          </colgroup>
+          
+             
+                </table>
+                                                                          
+                                                                          
+              <menu type="toolbar">
+                   
+                    <Command type ="radio" radiogroup="alignment" checked="checked" label="sena"
+                    
+                          onclick="setAlign('lafasd')">Mostrar Mensaje
+                          
+                         <button>mostrar mensaje</button>
+                         
+                    </Command><!--ETIQUETA COMAND:representa la accion del boton-->
             
            
-        </table>    
-                                                                           
-       <menu type="toolbar">
-            <comand type="radio" radiogropu="alignment" >                                                               
-                                                                           
-       </menu>                                                                            
-                                                                           
-                                                                           
-    
+            
+                    <Command type ="radio" radiogroup="alignment" checked="checked" label="correo" 
+                    
+                            onclick="setAlign('correo')">Mostrar Mensaje
+                    
+                    </Command>
+                    
+                    
+              </menu>	
+              
+        
+               <script type="text/javascript">
+            
+                      function setAlign(texto){
+                                
+                             alert("parametro enviado"+texto);
+                    
+                      }
+            
+               </script> 
+        
+        
+       
+        
+        <!--hacemos una lista organizada-->
+        
+        <ol>
+            <li> Nombre</li>
+            <li>Apellido</li>
+            
+            <ol style ="list-style-type:lower-alpha">
+                <li>Anderson</li>
+                <li>Alarcon</li>
+               
+            </ol>
+             <datagrip></datagrip>  <!--ETIQUETA DATAGRIP-->
+        </ol>
+        
+        
+        
+        <!--ETIQUETA DATALIST , autocompleta una busqueda-->
+        
+        <form action="demo_form.asp" method="get">
+        
+            <input list="browsers" name="browsers">
+            
+            <datalist id="browsers">
+                
+                <option value="Chrome">
+                <option value="internet"></option>
+            
+            
+            
+            </datalist>
+        
+        
+        
+        </form>  
+        
+                                                                 
+                                                                                                                                                                                   
     </body>
 </html>

@@ -6,13 +6,15 @@
     <head>
         
             <title>probando canvas</title>
+            
             <script>
                 
                 window.onload=function(){      //abrir la ventana para trabajar en Script
-                //se recibe el elemnto canvas
+                    
+                //se recibe el elemento canvas
                     var elemento=document.getElementById('micanvas');
         
-                    if (elemento && elemento.getContext){
+                    if (/*elemento &&*/ elemento.getContext){
                         //accedo al contexto 2d de este canvas, necesario para dibujar
                         
                         var contexto=elemento.getContext('2d');
@@ -23,8 +25,10 @@
                             contexto.fillRect(0,0,550,100);
                             //cambio el color de estilo de dibujo a rojo
                             contexto.fillStyle='#cc0000';
-                            //dibujootro rectangulo
+                            //dibujo otro rectangulo
                             contexto.fillRect(10,10,100,70);
+                            
+                           // contexto.fillRect(5,5,80,60);
                             
                         }
                         
@@ -32,6 +36,12 @@
                 } 
         
             </script>
+            
+            
+            
+            
+           
+            
     </head>
     
     
@@ -40,19 +50,28 @@
         <canvas id="micanvas" width="200" height="100">ESTE TEXTO SE MUESTRA PARA LOS NAVEGADORES NO COMPATIBLES
         </canvas>  <!--ETIQUETA CANVAS , etiqueta para animaciones, se programa en script-->
     
+        <br>
+        
+       
+        <caption> titulo de una tabla</caption> <!--ETIQUETA CAPTION sirve para mostrar el titulo de una tabla-->
+        
+      
         <center>
-            <p>Anderson Fabian Alarcon</p>
-        </center><!--ETIQUETA CENTER centrar texto-->
-        
+            <p>texto en el centro</p>
+        </center><!--ETIQUETA CENTER centrar texto-->    
+       
         <cite draggable="true">esto es una frase celebre</cite> <!--ETIQUETA CITE encerrar cintas como frases celebres,draggable para que se pueda arrastrar-->
-        
+       
+        <br>
+           
         <code><!--ETIQUETA CODE nos permite poner codigo en la pagina-->
             
-                <pre><!--nos toma los saltos de linea en codigo-->
+                <!--<pre>nos toma los saltos de linea en codigo-->
                 
                 <!--si queremos poner codigo de la misma pagina abrimos de la siguiente manera
                 &lbbody&rb asi este no generara errores -->
                 
+                <br>
                 
                 public class holaMundo(){
                 
@@ -60,14 +79,15 @@
                 }
                 
         </code>
-            
-        <caption> </caption> <!--ETIQUETA CAPTION sirve para mostrar el titulo de una tabla-->
-            
+        
         
             
-            
        
+        
             
+      
+        
+         
             
     </body>
 
