@@ -1,0 +1,59 @@
+<!DOCTYPE  html>
+
+
+<html>
+    
+        <head>
+    
+                <title> </title>
+        
+        </head>
+    
+        
+         <body>
+    
+                   <object data = "simpsons.mid" type="audio/x-midi" width="100" height="50">    <!--ETIQUETA OBJECT,se utiliza para insertar                                                                                             videos,audios,imagenes,flash,applets java,pdf-->
+             
+                             <param name="autoplay" value="false">
+                             <param name="autostart" value="0">
+       
+                    </object>
+                    
+                    
+                    <ol>                    <!--ETIQUETA Ol, Se utiliza para crear una lista organizada -->
+	                    <li>HTML</li>        <!--opciones o items de la lista-->
+                        <li>CSS</li>
+                        <li>JavaScript</li><br>
+                        
+                
+                    <h4>Lista desplegable</h4>        
+                            
+                    <select>
+                      
+                       <optgroup label="lenguajes Hibridos"> <!--ETIQUETA OPTGROUP, agrupa las opciones de una lista relacionadas poniendoles un                                                                    titulo-->
+                          <option value="java">Java</option>    
+                          <option value="c#">C#</option>
+                          
+                          
+                       </optgroup>
+                       
+                       <optgroup label="Lenguajes interpretados">
+                         
+                          <option value="php">Php</option>    <!--ETIQUETA OPTION,crea una opcion dentro de  una lista deplegable,-->
+                          <option value="javaScript">JavaScript</option>
+                          <option value="ruby">Ruby</option>
+                          
+                       </optgroup>
+                       
+                    </select> 
+                    
+                    <h4>otro</h4>
+                    
+                    <form name="formulario1" onsubmit="return false" oninput="o.value = parseInt(a.value) + parseInt(b.value)">
+                    <input name="a" type="number" step="any"> +
+                    <input name="b" type="number" step="any"> =
+                    <output  name="o" for="a b"></output>        <!--ETIQUETA OUTPUT-->           
+
+         </body>
+    
+</html>
